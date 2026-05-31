@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.index/
+.pytest_cache/
+*.egg-info/
+
+# Keep the committed sample logs so reviewers can see them, but ignore any
+# new local runs beyond the samples. (Remove these lines to track all logs.)
+# logs/*.sqlite
+# logs/*.jsonl

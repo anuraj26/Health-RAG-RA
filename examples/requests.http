@@ -1,0 +1,32 @@
+### Service info
+GET http://127.0.0.1:8000/
+
+### 1. General HFpEF education question
+POST http://127.0.0.1:8000/ask
+Content-Type: application/json
+
+{ "question": "What is HFpEF and what symptoms does it cause?" }
+
+### 2. Treatment-related question
+POST http://127.0.0.1:8000/ask
+Content-Type: application/json
+
+{ "question": "What should I ask my doctor about HFpEF treatment options?" }
+
+### 3. Insufficient evidence (refused safely)
+POST http://127.0.0.1:8000/ask
+Content-Type: application/json
+
+{ "question": "What is the best brand of running shoes for a marathon?" }
+
+### 4. High-risk symptom (guardrail escalation)
+POST http://127.0.0.1:8000/ask
+Content-Type: application/json
+
+{ "question": "I am having severe chest pain and shortness of breath right now." }
+
+### 5. Vague / ambiguous question (refused safely)
+POST http://127.0.0.1:8000/ask
+Content-Type: application/json
+
+{ "question": "Tell me about it." }

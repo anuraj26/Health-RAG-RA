@@ -1,0 +1,24 @@
+# --- Core (required) -------------------------------------------------------
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+python-dotenv>=1.0
+faiss-cpu>=1.8
+scikit-learn>=1.4        # provides the offline TF-IDF embedder + scipy
+numpy>=1.26
+httpx>=0.27
+
+# --- Tests (optional) ------------------------------------------------------
+pytest>=8.0
+
+# --- Optional: semantic embeddings (recommended for best retrieval) --------
+# Install these to switch the default "auto" backend onto local semantic
+# embeddings. First run downloads the model (~80 MB) from Hugging Face.
+#   pip install sentence-transformers
+# sentence-transformers>=2.7
+
+# --- Optional: hosted LLM answer generation --------------------------------
+# Only needed if you set LLM_BACKEND=openai or LLM_BACKEND=anthropic.
+# openai>=1.30
+# anthropic>=0.25
