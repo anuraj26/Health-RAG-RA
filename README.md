@@ -204,8 +204,6 @@ A real sample is included at `examples/sample_research_log.jsonl`.
 - **Tools used:** Claude (Anthropic).
 
 
-The five test outputs in §9 and `examples/` were produced by actually running
-the code (`python -m scripts.demo_queries`), not written by hand.
 
 ---
 
